@@ -6,7 +6,8 @@ use strict;
 use warnings;
 use open ":utf8";
 use open ":std";
-use lib "lib";
+use FindBin;
+use lib "$FindBin::Bin/../lib";
 use App::WWW::ResponseTime;
 
 my $app = App::WWW::ResponseTime->new;

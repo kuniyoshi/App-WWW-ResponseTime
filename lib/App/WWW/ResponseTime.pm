@@ -9,20 +9,19 @@ use App::WWW::ResponseTime::Log;
 use App::WWW::ResponseTime::Stat;
 use Mouse;
 
-our $VERSION = "0.01";
+our $VERSION = "0.02";
 
-has ua       => (
+has ua   => (
     is      => "rw",
     isa     => "LWP::UserAgent",
     default => sub { LWP::UserAgent->new( timeout => 30 ) },
 );
-has stat     => (
+has stat => (
     is      => "rw",
     isa     => "App::WWW::ResponseTime::Stat",
     default => sub { App::WWW::ResponseTime::Stat->new },
 );
 
-no Mouse::Util::TypeConstraints;
 no Mouse;
 __PACKAGE__->meta->make_immutable;
 

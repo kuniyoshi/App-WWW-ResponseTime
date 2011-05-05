@@ -4,7 +4,6 @@ use strict;
 use warnings;
 use Carp qw( croak );
 use List::Util qw( max min );
-use List::MoreUtils qw( zip );
 use overload ( q{""} => sub { shift->as_string }, fallback => 1 );
 use Statistics::Basic qw( vector mean median mode );
 use App::WWW::ResponseTime::Log;

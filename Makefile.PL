@@ -2,7 +2,11 @@ use inc::Module::Install;
 name 'App-WWW-ResponseTime';
 all_from 'lib/App/WWW/ResponseTime.pm';
 
-# requires '';
+requires "Statistics::Basic";
+requires "Mouse";
+requires "List::MoreUtils";
+requires "DateTime";
+requires "DateTime::Format::Strptime";
 
 tests 't/*.t';
 author_tests 'xt';

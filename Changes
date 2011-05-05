@@ -1,4 +1,7 @@
 Revision history for Perl extension App::WWW::ResponseTime
 
+
+0.01    Thu May  5 18:02:00 2011
+        - Add prereq modules and tidy up codes.
 0.01    Thu May  5 06:46:58 2011
         - original version
